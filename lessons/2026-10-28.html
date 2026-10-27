@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Uma mensagem clara · preciso de ajuda · Dansk</title><style>*{box-sizing:border-box}body{margin:0;background:#f3f6f3;color:#233a33;font:17px/1.6 system-ui,sans-serif}main{max-width:740px;margin:auto;padding:20px 16px 60px}h1{font-size:1.85rem;line-height:1.2}h2{font-size:1.2rem}section,header,.card{background:white;border:1px solid #dbe5df;border-radius:16px;padding:20px;margin:16px 0}small,.muted{color:#52655f}button,a.button{font:600 16px/1.3 system-ui;min-height:46px;padding:12px 16px;border:1px solid #8ba79a;border-radius:10px;background:#e8f3ec;color:#234c3c;cursor:pointer;display:inline-block;margin:5px 5px 5px 0}button:hover{background:#d7eade}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #2573ba;outline-offset:3px}button:disabled{opacity:.6;cursor:default}textarea{width:100%;max-width:100%;min-height:94px;font:16px/1.5 system-ui;padding:12px;border:1px solid #91a99c;border-radius:9px;background:#fff;color:#213a30;resize:vertical;display:block;margin:8px 0 20px}label{display:block;font-weight:600;overflow-wrap:anywhere}.da{background:#e9f5ec;border-radius:10px;padding:14px;margin:12px 0;font-size:16px;font-weight:600;color:#52655f;overflow-wrap:anywhere}.da p{margin:0 0 8px}.da button{background:white}.badge{font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:#52655f}#save-status,#copy-status{font-size:14px;min-height:24px}#clock{font-variant-numeric:tabular-nums;font-weight:700}#audio-bar{position:sticky;bottom:8px;background:#fff7e5;border:1px solid #d7b76a;padding:12px;border-radius:12px;z-index:3}a{color:#205b46;overflow-wrap:anywhere}[hidden]{display:none!important}.field{margin:22px 0}.note{border-left:4px solid #769a85;padding-left:12px}.listen{padding:14px;border:1px solid #dbe5df;border-radius:12px;margin:16px 0}footer{font-size:14px}#manual-copy{min-height:240px} @media(max-width:400px){main{padding:12px}section,header{padding:15px}h1{font-size:1.6rem}}</style></head><body><main>
+<a href="../index.html">← Todas as sessões</a><header><div class="badge">Dinamarquês · fundamentos</div><h1>Uma mensagem clara · preciso de ajuda</h1><p>2026-10-28 · 30 minutos · versão 1.0</p><p>Escrever uma mensagem curta com necessidade e pedido explícitos; usar hjælp til at + infinitivo; identificar ação, destinatário e prazo na escuta. Etapa: fundamentos, semana 1.</p><button id="start-timer" type="button">Iniciar</button> <span id="clock" role="timer">0 min 00 s</span><p id="save-status" role="status" aria-live="polite">Pronto para começar</p><p class="note">Tente primeiro sem tradutor. Se precisar de ajuda, use e registre; isso não é penalizado. O tempo inclui leitura, digitação e revisão. Ao chegar a 30 minutos, pare mesmo com tarefas incompletas.</p></header>
+<div id="activities"></div><section><h2>Concluir esta sessão</h2><button id="stop-timer" type="button">Parar</button><button id="copy" type="button">Copiar respostas para correção</button><p id="copy-status" role="status" aria-live="polite"></p><div id="manual-area" hidden><label for="manual-copy">Texto para cópia manual</label><textarea id="manual-copy" readonly></textarea></div><p>Cole o texto nesta conversa. Nada é enviado automaticamente ao ChatGPT ou ao GitHub.</p><button id="clear" type="button">Limpar respostas desta sessão</button></section>
+<div id="audio-bar" hidden><span id="audio-status" role="status" aria-live="polite"></span><button id="stop-audio" type="button">Parar áudio</button><button id="fallback" type="button" hidden>Usar voz dinamarquesa do dispositivo</button><p id="no-voice" hidden>Não há voz dinamarquesa disponível no dispositivo. Registre a falha nas consultas; leitura não contará como escuta.</p></div>
+<footer>Respostas ficam somente neste navegador/dispositivo (localStorage); não sincronizam e podem sumir ao apagar dados do navegador. O áudio sintético envia apenas o texto didático ao serviço TTS do Google; suas respostas não são enviadas. Cenários inventados não são procedimentos oficiais nem orientações de segurança.</footer>
+</main><script>const LESSON={"id":"grundlag-20261028","date":"2026-10-28","version":"1.0","title":"Uma mensagem clara · preciso de ajuda","objectives":"Escrever uma mensagem curta com necessidade e pedido explícitos; usar hjælp til at + infinitivo; identificar ação, destinatário e prazo na escuta. Etapa: fundamentos, semana 1.","blocks":[{"title":"1 · Retomar um pedido — 3 min","intro":"Toque em Iniciar. Escreva uma pergunta em dinamarquês pedindo a um colega que ajude você a ler uma mensagem. Tente sem copiar um modelo; pode consultar e registrar a ajuda. O tempo inclui instruções e digitação. Cenários fictícios para estudar o idioma, não procedimentos oficiais de trabalho ou segurança.","fields":[["p28-review","ESCREVA uma pergunta completa em dinamarquês: peça ajuda para ler uma mensagem."]]},{"title":"2 · Dizer de que ajuda precisa — 5 min","intro":"Para dizer que precisa de ajuda, use har brug for hjælp. Para indicar a ação, acrescente til at + infinitivo. Para pedir diretamente a alguém, use Kan du hjælpe mig med at + infinitivo? O at pertence à ação depois de til ou med; logo depois de kan, hjælpe fica sem at. Apoio: forstå = entender; forklare = explicar; en opgave = uma atividade. Compare os exemplos.","examples":["Jeg har brug for hjælp til at forstå teksten.","Kan du hjælpe mig med at læse brevet?","Kan du forklare opgaven?"]},{"title":"3 · Ler e escrever uma mensagem — 8 min","intro":"Apoio antes da atividade: en etiket = uma etiqueta; en adresse = um endereço; tydelig = legível/claro; en modtager = um destinatário. Leia a mensagem e responda em português à primeira pergunta. Depois escreva sua própria mensagem em dinamarquês, com três frases, seguindo a situação no segundo campo. Não copie toda a mensagem de leitura.","reading":{"text":"Hej Lea. Jeg har en pakke, men adressen er ikke tydelig. Jeg har brug for hjælp til at læse etiketten. Kan du hjælpe mig efter pausen?","questions":[["p28-r1","Qual é o problema e que ajuda a pessoa pede? Responda em português com duas informações curtas."],["p28-write","ESCREVA em dinamarquês três frases para o colega Anton: você recebeu uma lista, não entende uma palavra e quer que ele explique essa palavra. Apoio: modtaget = recebido; et ord = uma palavra. Inclua um pedido direto. A saudação não conta como frase."]]}},{"title":"4 · Ouvir: ação, destinatário e prazo — 6 min","intro":"Apoio antes de ouvir: sende = enviar; et foto = uma foto; før klokken = antes das (horas). ETAPA 1: leia as perguntas, ouça a mensagem completa e responda em português nos quatro campos. Pode repetir. Não copie o áudio inteiro. ETAPA 2: abra Consultar transcrição depois da tentativa e preencha o campo que aparecer. Reserve os últimos 2 minutos para comparar: o que mudou ou ficou mais claro? As primeiras respostas ficam preservadas. Se o áudio falhar, registre isso; leitura não conta como escuta. TTS é apoio sintético, não fala espontânea.","listens":[{"id":"p28-l1","speaker":"Colega — voz sintética","text":"Mona skal læse listen. Du skal sende et foto til Erik før klokken elleve. Erik skal kontrollere adressen.","questions":["Quem deve ler a lista? Escreva o nome.","O que você deve enviar? Responda com uma expressão curta.","Para quem deve enviar? Escreva o nome.","Antes de que horário deve enviar? Escreva o horário."]}]},{"title":"5 · Falar antes de escrever — 5 min","intro":"Apoio antes da produção: en besked = uma mensagem; forklare = explicar; forstå = entender. Você está conversando com uma colega e não entende uma mensagem. Pense por até 30 segundos e fale duas frases em dinamarquês: diga de que ajuda precisa e peça que ela explique a mensagem. Use o ponto linguístico de hoje. Só depois transcreva fielmente o que falou, sem melhorar. Não envie gravação; a avaliação é somente de conteúdo e construção.","fields":[["p28-oral","TRANSCREVA exatamente as duas frases em dinamarquês que você falou."],["p28-mode","Em português: falou antes de escrever? Usou roteiro, tradução, ditado ou outra ajuda? Indique qual."]]},{"title":"6 · Revisar e enviar — 3 min","intro":"Revise a mensagem escrita: informou o problema e fez um pedido? Confira os verbos depois de kan e de til at. Preserve a transcrição fiel da fala e as primeiras respostas da escuta. Confira se registrou a comparação após ler. Complete os registros abaixo, toque em Parar e Copiar respostas para correção e cole no chat. Pare aos 30 minutos; não há tarefa extra.","fields":[["p28-help","Em português: indique os IDs e o apoio usado, e o que mudou. Registre falhas de áudio ou instruções confusas. Se não houve ajuda adicional, escreva “nenhuma”."],["p28-time","Em português: o tempo foi suficiente? Onde demorou mais? Houve pausas com o cronômetro ligado?"]]}]};
+
+'use strict';
+const $=id=>document.getElementById(id);
+const key='dansk-logistik:storage-v1:'+LESSON.id+':'+LESSON.date;
+let state={fields:{},elapsed:0,runningSince:null,transcripts:{},audioPlays:{},snapshots:{}},pending=null,audio=null,activeText='',audioToken=0;
+const fields=[], refs=[];
+function el(tag,text,cls){const n=document.createElement(tag);if(text!==undefined)n.textContent=text;if(cls)n.className=cls;return n}
+function button(text,fn){const b=el('button',text);b.type='button';b.addEventListener('click',fn);return b}
+function makeField(parent,id,label){const wrap=el('div',undefined,'field'),l=el('label',id+' · '+label),t=el('textarea');t.id=id;l.htmlFor=id;t.spellcheck=false;t.setAttribute('autocorrect','off');t.setAttribute('autocapitalize','off');t.autocomplete='off';wrap.append(l,t);parent.append(wrap);fields.push({id,label,node:t});return t}
+function danish(parent,text,id){const box=el('div',undefined,'da');const p=el('p',text);p.lang='da';box.append(p,button('Ouvir texto completo',()=>play(text,id)));parent.append(box)}
+function total(){return state.elapsed+(state.runningSince===null?0:Math.max(0,Date.now()-state.runningSince))}
+function timeText(ms){const s=Math.floor(ms/1000);return Math.floor(s/60)+' min '+String(s%60).padStart(2,'0')+' s'}
+function tick(){$('clock').textContent=timeText(total());$('start-timer').disabled=state.runningSince!==null}
+function collect(){for(const f of fields)state.fields[f.id]=f.node.value}
+function save(){clearTimeout(pending);pending=null;collect();try{localStorage.setItem(key,JSON.stringify(state));$('save-status').textContent='Salvo neste dispositivo';return true}catch(e){$('save-status').textContent='Erro ao salvar neste dispositivo. Seu texto continua nos campos; copie as respostas antes de sair.';return false}}
+function queueSave(){$('save-status').textContent='Salvando…';clearTimeout(pending);pending=setTimeout(save,500)}
+function stopAudio(){audioToken++;if(audio){audio.pause();audio.removeAttribute('src');audio.load();audio=null}if('speechSynthesis' in window)window.speechSynthesis.cancel();$('audio-bar').hidden=true}
+function daVoice(){return 'speechSynthesis' in window?window.speechSynthesis.getVoices().find(v=>/^da(?:-|$)/i.test(v.lang)):null}
+function audioError(){ $('audio-bar').hidden=false;$('audio-status').textContent='Não foi possível reproduzir o áudio do Google. Você pode tentar novamente.';$('fallback').hidden=!daVoice();$('no-voice').hidden=!!daVoice()}
+
+let activeChunks=[],activeIndex=0,activeId='',lastUtterance=null;
+function splitAudio(text){return text.match(/.{1,170}(?:\s|$)/g)?.map(s=>s.trim()).filter(Boolean)||[text]}
+function finished(){if($('status-'+activeId))$('status-'+activeId).textContent='Mensagem completa reproduzida. Responda abaixo.';state.audioCompleted=state.audioCompleted||{};state.audioCompleted[activeId]=(state.audioCompleted[activeId]||0)+1;save();stopAudio();$('copy-status').textContent='Mensagem completa reproduzida. Agora responda às perguntas.'}
+function play(text,id){stopAudio();activeId=id;if($('status-'+id))$('status-'+id).textContent='Reprodução iniciada; aguarde a mensagem completa.';activeChunks=splitAudio(text);activeIndex=0;state.audioPlays[id]=(state.audioPlays[id]||0)+1;save();$('copy-status').textContent='';playChunk(audioToken)}
+function playChunk(token){
+ if(token!==audioToken)return;
+ if(activeIndex>=activeChunks.length){finished();return}
+ activeText=activeChunks[activeIndex];audio=new Audio();audio.preload='none';audio.src='https://translate.google.com/translate_tts?ie=UTF-8&client=tw-ob&tl=da&q='+encodeURIComponent(activeText);
+ $('audio-bar').hidden=false;$('audio-status').textContent='Carregando parte '+(activeIndex+1)+' de '+activeChunks.length+'…';$('fallback').hidden=true;$('no-voice').hidden=true;
+ audio.onended=()=>{if(token===audioToken){activeIndex++;playChunk(token)}};
+ audio.onerror=()=>{if(token===audioToken)audioError()};
+ audio.play().then(()=>{if(token===audioToken)$('audio-status').textContent='Reproduzindo parte '+(activeIndex+1)+' de '+activeChunks.length}).catch(()=>{if(token===audioToken)audioError()});
+}
+$('stop-audio').onclick=stopAudio;
+$('fallback').onclick=()=>{
+ const voice=daVoice();if(!voice){audioError();return}
+ stopAudio();const token=audioToken;
+ function speakNext(){
+  if(token!==audioToken)return;if(activeIndex>=activeChunks.length){finished();return}
+  $('audio-bar').hidden=false;$('fallback').hidden=true;$('no-voice').hidden=true;$('audio-status').textContent='Voz dinamarquesa · parte '+(activeIndex+1)+' de '+activeChunks.length;
+  const u=new SpeechSynthesisUtterance(activeChunks[activeIndex]);lastUtterance=u;u.lang='da-DK';u.voice=voice;
+  u.onend=()=>{if(token===audioToken){activeIndex++;speakNext()}};
+  u.onerror=()=>{if(token===audioToken){$('audio-status').textContent='Falha na voz do dispositivo. Registre nas consultas.';$('fallback').hidden=false}};
+  window.speechSynthesis.speak(u);
+ }speakNext();
+};
+if('speechSynthesis' in window)window.speechSynthesis.addEventListener('voiceschanged',()=>{if(!$('audio-bar').hidden&&$('audio-status').textContent.startsWith('Não foi'))audioError()});
+
+for(const block of LESSON.blocks){
+ const section=el('section');section.append(el('h2',block.title),el('p',block.intro));refs.push(block.title+'\n'+block.intro);
+ for(const [i,example] of (block.examples||[]).entries()){danish(section,example,'example-'+LESSON.blocks.indexOf(block)+'-'+i);refs.push('Exemplo didático: '+example)}
+ if(block.text){danish(section,block.text,'reading');refs.push('Texto de leitura: '+block.text)}
+ for(const [id,label,prompt] of block.fields||[]){const field=makeField(section,id,label);if(prompt){danish(field.parentElement,prompt,id);field.parentElement.append(field);refs.push(id+' · Referência: '+prompt)}}
+ if(block.reading){danish(section,block.reading.text,'reading');refs.push('Bilhete de leitura: '+block.reading.text);for(const [id,label] of block.reading.questions)makeField(section,id,label)}
+
+ for(const [index,l] of (block.listens||[]).entries()){
+  const box=el('div',undefined,'listen');box.append(el('h3','Mensagem '+(index+1)),el('p','Falante: '+l.speaker));
+  box.append(button((index+1)+' · Ouvir mensagem completa',()=>play(l.text,l.id)),button('Parar mensagem',stopAudio));const playback=el('p');playback.id='status-'+l.id;playback.setAttribute('role','status');box.append(playback);
+  const firstFields=l.questions.map((question,i)=>makeField(box,l.id+'-q'+(i+1),question+' Primeira tentativa: só ouvindo.'));
+  const reveal=button('Consultar transcrição depois da tentativa',()=>{
+   if(!state.transcripts[l.id]){
+    if(!firstFields.some(t=>t.value.trim())&&!confirm('Você ainda não registrou uma tentativa. Se tentou e não entendeu, pode consultar; isso será registrado. Abrir transcrição?'))return;
+    state.snapshots[l.id]=Object.fromEntries(firstFields.map(t=>[t.id,t.value]));state.transcripts[l.id]=true;save();
+   }renderTranscript();
+  });
+  const transcript=el('div');transcript.id=l.id+'-transcript';transcript.hidden=true;danish(transcript,l.text,l.id+'-reference');
+  const afterBox=el('div');afterBox.hidden=true;makeField(afterBox,l.id+'-after','ETAPA 2 — Depois de ler: indique o número da pergunta e sua nova resposta para o que mudou. Diga também qual palavra ficou mais clara. Se nada mudou, escreva “mantive as respostas”. Não apague a tentativa inicial.');
+  function renderTranscript(){transcript.hidden=false;afterBox.hidden=false;firstFields.forEach(t=>t.readOnly=true);reveal.disabled=true;reveal.textContent='Transcrição consultada — primeiras respostas preservadas'}
+  box.append(reveal,transcript,afterBox);section.append(box);
+  refs.push(l.id+' · Falante: '+l.speaker+'\nPerguntas: '+l.questions.map((q,i)=>(i+1)+'. '+q).join('\n')+'\nTRANSCRIÇÃO DE REFERÊNCIA (não é resposta da estudante): '+l.text);
+  l.restore=renderTranscript;
+ }
+
+ $('activities').append(section);
+}
+
+try{
+ const raw=localStorage.getItem(key);
+ if(raw){const parsed=JSON.parse(raw);if(!parsed||typeof parsed!=='object'||!parsed.fields||typeof parsed.fields!=='object')throw new Error('invalid');
+ state={...state,...parsed};state.elapsed=Number.isFinite(state.elapsed)&&state.elapsed>=0?state.elapsed:0;state.runningSince=Number.isFinite(state.runningSince)?state.runningSince:null;
+ for(const f of fields)if(Object.prototype.hasOwnProperty.call(state.fields,f.id))f.node.value=String(state.fields[f.id]??'');
+ for(const b of LESSON.blocks)for(const l of b.listens||[])if(state.transcripts[l.id]){if(state.snapshots[l.id])for(const [id,value] of Object.entries(state.snapshots[l.id]))if($(id))$(id).value=value;l.restore()}
+ $('save-status').textContent='Respostas restauradas neste dispositivo';
+ }
+}catch(e){$('save-status').textContent='Não foi possível restaurar o armazenamento. O texto que você digitar continuará disponível nos campos.'}
+for(const f of fields)f.node.addEventListener('input',queueSave);
+$('start-timer').onclick=()=>{if(state.runningSince===null){state.runningSince=Date.now();save();tick()}};
+$('stop-timer').onclick=()=>{state.elapsed=total();state.runningSince=null;save();tick()};
+window.addEventListener('pagehide',save);
+document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='hidden')save()});
+setInterval(tick,1000);tick();
+$('clear').onclick=()=>{if(!confirm('Limpar todas as respostas, consultas e tempo desta sessão neste dispositivo?'))return;stopAudio();for(const f of fields){f.node.value='';f.node.readOnly=false}state={fields:{},elapsed:0,runningSince:null,transcripts:{},audioPlays:{},snapshots:{}};save();location.reload()};
+function exportText(){
+const answerLines=fields.map(f=>f.id+' · '+f.label+'\nRESPOSTA EXATA:\n'+(f.node.value===''?'não respondido':f.node.value));
+return 'Corrija minhas respostas conforme o plano de tutoria de dinamarquês desta conversa. Explique em português brasileiro. Compare cada resposta com seu enunciado, mostre original e correção juntos, destaque alterações em negrito Markdown, preserve a intenção e diferencie erro de estilo. Reconheça acertos com evidências e explique no máximo três prioridades. Diferencie trabalho independente e com apoio, sem penalizar consultas. Não atribua nível ou nota oficial. Se houver apenas transcrição de fala, avalie conteúdo e construção, não pronúncia ou fluidez. Esta é uma aula de fundamentos, não uma nova sessão diagnóstica. Use as respostas desta aula para corrigir a prática. Não trate instrução confusa ou falha de interface como dificuldade linguística. Adapte a prática às evidências disponíveis na conversa privada e ao tempo real, sem presumir conclusão de aulas apenas por estarem publicadas. Proponha somente uma reutilização curta dentro da carga combinada. Atualize a seção “Para lembrar” da página correspondente SOMENTE com regras, vocabulário e exemplos didáticos genéricos com TTS; nunca publique minhas respostas, notas ou correções individuais.\\n'
+.replace(/\\n/g,'\n')+
+'\nLIÇÃO\nData: '+LESSON.date+'\nTítulo: '+LESSON.title+'\nID: '+LESSON.id+'\nVersão: '+LESSON.version+'\nObjetivos: '+LESSON.objectives+
+'\n\nREFERÊNCIAS E ENUNCIADOS — NÃO SÃO MINHAS RESPOSTAS\n'+refs.join('\n\n')+
+'\n\nMINHAS RESPOSTAS\n'+answerLines.join('\n\n')+
+'\n\nREGISTRO DE APOIO\nTranscrições consultadas: '+JSON.stringify(state.transcripts)+
+'\nTentativas de reprodução por ID (inclui falhas; confira minhas consultas): '+JSON.stringify(state.audioPlays)+
+'\nReproduções completas confirmadas: '+JSON.stringify(state.audioCompleted||{})+
+'\nPrimeiras tentativas preservadas ao consultar transcrição: '+JSON.stringify(state.snapshots)+
+'\nTempo total: '+timeText(total())+(state.runningSince!==null?' (cronômetro ainda em execução)':'')+
+'\nRespostas não foram enviadas automaticamente. A prática oral é enviada somente por transcrição fiel. Não espere gravações e não avalie pronúncia, ritmo ou fluidez.';
+}
+$('copy').onclick=async()=>{save();const text=exportText();$('copy-status').textContent='';try{if(!navigator.clipboard?.writeText)throw new Error('clipboard');await navigator.clipboard.writeText(text);$('manual-area').hidden=true;$('copy-status').textContent='Respostas copiadas'}catch(e){$('manual-area').hidden=false;$('manual-copy').value=text;$('manual-copy').focus();$('manual-copy').select();$('copy-status').textContent='Cópia automática indisponível. Selecione e copie o texto abaixo.'}};
+</script></body></html>
